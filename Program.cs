@@ -28,7 +28,8 @@ namespace Weekday
         static void Main(string[] args)
         {
             // This will get the current date from the computer
-            DateTime localDate = DateTime.Now;  
+            DateTime localDate = DateTime.Now;
+            int today = (int)localDate.DayOfWeek;
 
             Console.WriteLine("Weekday 1: " + WeekdayName(1));
             Console.WriteLine("Weekday 2: " + WeekdayName(2));
@@ -43,7 +44,7 @@ namespace Weekday
             Console.WriteLine("Weekday 17: " + WeekdayName(17));
             Console.WriteLine("Weekday -1: " + WeekdayName(-1));
             Console.WriteLine();
-            Console.WriteLine("Today's date is " + localDate.ToString());
+            Console.WriteLine("Today's is a" + today);
 
             Console.ReadLine(); // Keeps program from automatically closing
         }
