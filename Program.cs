@@ -44,7 +44,7 @@ namespace Weekday
             Console.WriteLine("Weekday 17: " + WeekdayName(17));
             Console.WriteLine("Weekday -1: " + WeekdayName(-1));
             Console.WriteLine();
-            Console.WriteLine("Today's is a " + WeekdayName(today));
+            Console.WriteLine("Today's is a " + WeekdayName(today) + ".");
 
             Console.ReadLine(); // Keeps program from automatically closing
         }
