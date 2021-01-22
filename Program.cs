@@ -14,11 +14,11 @@ namespace Weekday
             string result = "";
             if (day == 1)
             {
-                result = "Sunday";
+                result = "Monday";
             }
             else if (day == 2)
             {
-                result = "Monday";
+                result = "Tuesday";
             }
             // Add the remaining 'else if' statements for the rest of the days of the week.
             // Make result be 'error' if a number other than 1-7 is entered.
@@ -44,7 +44,7 @@ namespace Weekday
             Console.WriteLine("Weekday 17: " + WeekdayName(17));
             Console.WriteLine("Weekday -1: " + WeekdayName(-1));
             Console.WriteLine();
-            Console.WriteLine("Today's is a" + today);
+            Console.WriteLine("Today's is a " + WeekdayName(today));
 
             Console.ReadLine(); // Keeps program from automatically closing
         }
